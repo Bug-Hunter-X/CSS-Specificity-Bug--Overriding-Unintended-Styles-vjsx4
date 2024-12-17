@@ -1,0 +1,13 @@
+To address this, use more general selectors or adjust the specificity.  Here's a solution that improves the code:
+
+```css
+.item {
+  background-color: blue; /* Default style */
+}
+
+#main-container .item:nth-child(2) {
+  background-color: red; /* Override for the second item */
+}
+```
+
+This approach applies a default style to all `.item` elements, then specifically overrides the style for the second item within `#main-container`. This approach ensures better control and predictability.
