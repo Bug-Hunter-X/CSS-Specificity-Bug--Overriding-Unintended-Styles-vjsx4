@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates a common issue where the selector is too specific and overrides unintended styles:
+
+```css
+#main-container .item:nth-child(2) {
+  background-color: red;
+}
+```
+
+This selector will only affect the second `.item` element within the `#main-container` element.  If you have other `.item` elements elsewhere, they might not be affected as intended.  This can lead to unexpected visual inconsistencies if not properly planned.
